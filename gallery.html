@@ -5,43 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Галерея - Садик "Академия"</title>
   <link rel="stylesheet" href="css/style.css">
-
-  <!-- Стили только для галереи -->
   <style>
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px;
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .gallery-item {
-      background: #fff;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-      transition: transform 0.3s;
-    }
-    .gallery-item:hover {
-      transform: scale(1.03);
-    }
-    .gallery-item img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      display: block;
-    }
-    .gallery-caption {
-      padding: 15px;
-      text-align: center;
-      font-weight: 500;
-      color: #333;
-    }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+    .gallery-item { background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: transform 0.3s; }
+    .gallery-item:hover { transform: scale(1.03); }
+    .gallery-item img { width: 100%; height: 250px; object-fit: cover; display: block; }
+    .gallery-caption { padding: 15px; text-align: center; font-weight: 500; color: #333; }
   </style>
 </head>
 <body>
-  <!-- Шапка сайта -->
   <header>
     <div class="logo">☪️ Академия</div>
     <nav>
@@ -53,60 +25,42 @@
     </nav>
   </header>
 
-  <!-- Основной контент -->
   <section class="features">
     <h2>Жизнь в "Академии"</h2>
-    <p style="text-align: center; margin-bottom: 20px;">
-      Наши будни: учеба, игры, творчество и много улыбок.
-    </p>
+    <p style="text-align: center; margin-bottom: 20px;">Наши будни: учеба, игры, творчество и много улыбок.</p>
 
     <div class="gallery-grid">
-      
-      <!-- Фото 1: Творчество (рисование) -->
       <div class="gallery-item">
-        <img src="https://i.ibb.co/68x9G6K/photo1.jpg" alt="Творчество">
+        <img src="photo1.jpg.png" alt="Творчество">
         <div class="gallery-caption">Творческая мастерская</div>
       </div>
-
-      <!-- Фото 2: Спорт (кольца) -->
       <div class="gallery-item">
-        <img src="https://i.ibb.co/6PZq6Q3/photo2.jpg" alt="Спорт">
+        <img src="photo2.jpg.png" alt="Спорт">
         <div class="gallery-caption">Физическое развитие</div>
       </div>
-
-      <!-- Фото 3: Прогулка (горка) -->
       <div class="gallery-item">
-        <img src="https://i.ibb.co/3sK4r4Q/photo3.jpg" alt="Прогулка">
+        <img src="photo3.jpg.png" alt="Прогулка">
         <div class="gallery-caption">Наш участок для прогулок</div>
       </div>
-
-      <!-- Фото 4: Учеба (арабский/буква) -->
       <div class="gallery-item">
-        <img src="https://i.ibb.co/0yR2q6H/photo4.jpg" alt="Обучение">
+        <img src="photo4.jpg.png" alt="Обучение">
         <div class="gallery-caption">Изучаем арабский язык</div>
       </div>
-
-      <!-- Фото 5: Питание (дети кушают) -->
       <div class="gallery-item">
-        <img src="https://i.ibb.co/9qJ1r6V/photo5.jpg" alt="Питание">
+        <img src="photo5.jpg.png" alt="Питание">
         <div class="gallery-caption">Вкусный и полезный обед</div>
       </div>
-
-      <!-- Фото 6: Развитие (фигуры) -->
       <div class="gallery-item">
-        <img src="https://i.ibb.co/7vC3m5X/photo6.jpg" alt="Развивающие игры">
+        <img src="photo6.jpg.png" alt="Развивающие игры">
         <div class="gallery-caption">Развивающие игры</div>
       </div>
-
     </div>
 
-    <!-- Кнопка -->
     <div style="text-align: center; margin-top: 40px; margin-bottom: 60px;">
       <a href="contacts.html" class="btn">Записаться на экскурсию</a>
     </div>
   </section>
 
-  <!-- Подвал -->
   <footer>
     <p>© 2025 Частный исламский садик "Академия". Все права защищены.</p>
   </footer>
