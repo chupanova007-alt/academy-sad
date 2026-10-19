@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея - Садик "Академия"</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Стили только для галереи (чтобы не ломать основной style.css) -->
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .gallery-item {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .gallery-item:hover {
+      transform: scale(1.03);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+    .gallery-caption {
+      padding: 15px;
+      text-align: center;
+      font-weight: 500;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header>
+    <div class="logo">☪️ Академия</div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="programs.html">Программы</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Основной контент -->
+  <section class="features">
+    <h2>Жизнь в "Академии"</h2>
+    <p style="text-align: center; margin-bottom: 20px;">
+      Наши будни: учеба, игры, творчество и много улыбок.
+    </p>
+
+    <div class="gallery-grid">
+      
+      <!-- КАРТОЧКА 1 -->
+      <div class="gallery-item">
+        <!-- Замените 'images/photo1.jpg' на реальное название вашего файла -->
+        <img src="images/photo1.jpg" alt="Занятия в садике">
+        <div class="gallery-caption">Развивающие занятия</div>
+      </div>
+
+      <!-- КАРТОЧКА 2 -->
+      <div class="gallery-item">
+        <img src="images/photo2.jpg" alt="Прогулка">
+        <div class="gallery-caption">Прогулки на свежем воздухе</div>
+      </div>
+
+      <!-- КАРТОЧКА 3 -->
+      <div class="gallery-item">
+        <img src="images/photo3.jpg" alt="Творчество">
+        <div class="gallery-caption">Творческая мастерская</div>
+      </div>
+
+      <!-- КАРТОЧКА 4 -->
+      <div class="gallery-item">
+        <img src="images/photo4.jpg" alt="Питание">
+        <div class="gallery-caption">Вкусное и полезное питание</div>
+      </div>
+
+      <!-- КАРТОЧКА 5 -->
+      <div class="gallery-item">
+        <img src="images/photo5.jpg" alt="Игровая комната">
+        <div class="gallery-caption">Наша игровая комната</div>
+      </div>
+
+      <!-- КАРТОЧКА 6 -->
+      <div class="gallery-item">
+        <img src="images/photo6.jpg" alt="Уроки Корана">
+        <div class="gallery-caption">Уроки арабского языка</div>
+      </div>
+
+    </div>
+
+    <!-- Кнопка -->
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 60px;">
+      <a href="contacts.html" class="btn">Записаться на экскурсию</a>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer>
+    <p>© 2025 Частный исламский садик "Академия". Все права защищены.</p>
+  </footer>
+</body>
+</html>
