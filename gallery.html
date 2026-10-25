@@ -3,19 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Галерея - Садик "Академия"</title>
+  <title>Галерея - Академия</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Стили для логотипа и галереи -->
   <style>
-    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; max-width: 1100px; margin: 40px auto; padding: 0 20px; }
-    .gallery-item { background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: transform 0.3s; }
-    .gallery-item:hover { transform: scale(1.03); }
-    .gallery-item img { width: 100%; height: 250px; object-fit: cover; display: block; }
-    .gallery-caption { padding: 15px; text-align: center; font-weight: 500; color: #333; }
+    .logo { display: flex; align-items: center; gap: 12px; font-size: 24px; font-weight: bold; color: #4a90e2; }
+    .logo img { height: 50px; width: auto; border-radius: 50%; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; padding: 20px; max-width: 1100px; margin: 0 auto; }
+    .gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; transition: transform 0.3s; cursor: pointer; }
+    .gallery img:hover { transform: scale(1.03); }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo">☪️ Академия</div>
+    <!-- Блок с логотипом -->
+    <div class="logo">
+      <img src="logo.png" alt="Логотип Академия">
+      <span>Академия</span>
+    </div>
+    
     <nav>
       <a href="index.html">Главная</a>
       <a href="about.html">О нас</a>
@@ -26,43 +32,22 @@
   </header>
 
   <section class="features">
-    <h2>Жизнь в "Академии"</h2>
-    <p style="text-align: center; margin-bottom: 20px;">Наши будни: учеба, игры, творчество и много улыбок.</p>
-
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="photo1.jpg.png" alt="Творчество">
-        <div class="gallery-caption">Творческая мастерская</div>
-      </div>
-      <div class="gallery-item">
-        <img src="photo2.jpg.png" alt="Спорт">
-        <div class="gallery-caption">Физическое развитие</div>
-      </div>
-      <div class="gallery-item">
-        <img src="photo3.jpg.png" alt="Прогулка">
-        <div class="gallery-caption">Наш участок для прогулок</div>
-      </div>
-      <div class="gallery-item">
-        <img src="photo4.jpg.png" alt="Обучение">
-        <div class="gallery-caption">Изучаем арабский язык</div>
-      </div>
-      <div class="gallery-item">
-        <img src="photo5.jpg.png" alt="Питание">
-        <div class="gallery-caption">Вкусный и полезный обед</div>
-      </div>
-      <div class="gallery-item">
-        <img src="photo6.jpg.png" alt="Развивающие игры">
-        <div class="gallery-caption">Развивающие игры</div>
-      </div>
-    </div>
-
-    <div style="text-align: center; margin-top: 40px; margin-bottom: 60px;">
-      <a href="contacts.html" class="btn">Записаться на экскурсию</a>
+    <h2>Фотогалерея</h2>
+    <p style="margin-bottom: 20px;">Как проходят наши будни</p>
+    
+    <div class="gallery">
+      <!-- Замените названия ниже на те, что вы загрузили (например, photo1.jpg.png) -->
+      <img src="photo1.jpg.png" alt="Фото садика">
+      <img src="photo2.jpg.png" alt="Фото садика">
+      <img src="photo3.jpg.png" alt="Фото садика">
+      <img src="photo4.jpg.png" alt="Фото садика">
+      <img src="photo5.jpg.png" alt="Фото садика">
+      <img src="photo6.jpg.png" alt="Фото садика">
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Частный исламский садик "Академия". Все права защищены.</p>
+    <p>© 2025 Частный садик "Академия". Все права защищены.</p>
   </footer>
 </body>
 </html>
