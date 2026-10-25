@@ -3,12 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Частный садик "Академия"</title>
+  <title>Частный детский сад "Академия"</title>
   <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Стили для логотипа, чтобы он красиво стоял с текстом -->
+  <style>
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px; /* Расстояние между картинкой и текстом */
+      font-size: 24px;
+      font-weight: bold;
+      color: #4a90e2;
+    }
+    .logo img {
+      height: 50px; /* Высота логотипа. Если слишком большой - поставьте 40px */
+      width: auto;
+      border-radius: 50%; /* Делает логотип круглым. Если не нужно - удалите эту строку */
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="logo">🎓 Академия</div>
+    <!-- Блок с логотипом -->
+    <div class="logo">
+      <!-- Ссылка на картинку. Если вы назвали файл logo.jpg, поменяйте logo.png на logo.jpg -->
+      <img src="images/logo.png" alt="Логотип Академия">
+      <span>Академия</span>
+    </div>
+    
     <nav>
       <a href="index.html">Главная</a>
       <a href="about.html">О нас</a>
@@ -29,15 +52,15 @@
     <div class="cards">
       <div class="card">
         <h3>👩‍🏫 Опытные педагоги</h3>
-        <p>Специалисты с высшим образованием и любовью к детям</p>
+        <p>Специалисты с педогагическим образованием, большим стажем работы и любовью к детям</p>
       </div>
       <div class="card">
         <h3>🍎 Разнообразное питание</h3>
-        <p>Сбалансированное 4-разовое меню</p>
+        <p>Сбалансированное 5-разовое меню</p>
       </div>
       <div class="card">
         <h3>🎨 Развивающие занятия</h3>
-        <p>Англо-арабский, рисование, гимнастика, бассейн, логопед, подготовка к школе</p>
+        <p>Англиский язык, арабский язык, рисование, гимнастика, бассейн, логопед, подготовка к школе</p>
       </div>
       <div class="card">
         <h3>🛡️ Безопасность</h3>
