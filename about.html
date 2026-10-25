@@ -5,15 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>О нас - Академия</title>
   <link rel="stylesheet" href="css/style.css">
-  <!-- Стили для логотипа -->
+  
   <style>
+    /* Стили для логотипа */
     .logo { display: flex; align-items: center; gap: 12px; font-size: 24px; font-weight: bold; color: #4a90e2; }
     .logo img { height: 50px; width: auto; border-radius: 50%; }
+
+    /* Новые стили для страницы "О нас" */
+    .about-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    
+    .about-title {
+      text-align: center;
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    /* Блок с текстом и картинкой (две колонки) */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    .about-text h3 {
+      font-size: 24px;
+      color: #4a90e2;
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 15px;
+      line-height: 1.8;
+    }
+
+    /* Заглушка вместо фото (если добавите фото садика, вставьте его сюда) */
+    .about-image {
+      background: linear-gradient(135deg, #a8d8ff 0%, #ffe6a8 100%);
+      height: 300px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 60px;
+    }
+
+    /* Блок с цифрами (статистика) */
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      background: #4a90e2;
+      color: white;
+      padding: 40px 20px;
+      border-radius: 20px;
+      margin-bottom: 60px;
+      text-align: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .stat-item h4 {
+      font-size: 36px;
+      margin-bottom: 5px;
+    }
+
+    .stat-item p {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    /* Сетка с преимуществами */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .value-card {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 15px;
+      border-left: 5px solid #4a90e2;
+      transition: transform 0.3s;
+    }
+
+    .value-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+
+    .value-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .value-card p {
+      color: #666;
+      font-size: 15px;
+    }
+
+    /* Адаптив для телефонов */
+    @media (max-width: 768px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .stats { flex-direction: column; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <!-- Блок с логотипом -->
     <div class="logo">
       <img src="logo.png" alt="Логотип Академия">
       <span>Академия</span>
@@ -28,12 +136,60 @@
     </nav>
   </header>
 
-  <section class="features">
-    <h2>О нашем садике</h2>
-    <div style="max-width: 800px; margin: 0 auto; text-align: left;">
-      <p style="margin-bottom: 20px;">Частный детский сад «Академия» — это место, где каждый ребенок чувствует себя в безопасности и комфорте. Мы создаем уникальную атмосферу, в которой детям интересно учиться и развиваться.</p>
-      <p style="margin-bottom: 20px;">Наши группы небольшие, что позволяет педагогам уделить внимание каждому малышу. Мы используем современные методики развития, сочетая их с классическими традициями дошкольного образования.</p>
-      <p>Наши ценности: забота, безопасность, индивидуальный подход и любовь к детям.</p>
+  <section class="about-section">
+    <h2 class="about-title">Добро пожаловать в «Академию»</h2>
+
+    <!-- Блок 1: Текст + Картинка -->
+    <div class="about-grid">
+      <div class="about-text">
+        <h3>Место, где детям интересно</h3>
+        <p>Частный детский сад «Академия» — это пространство, где каждый ребенок чувствует себя в безопасности, а обучение превращается в увлекательное приключение.</p>
+        <p>Мы создали уникальную атмосферу, в которой гармонично сочетаются современные образовательные методики и классические традиции дошкольного воспитания.</p>
+      </div>
+      <div class="about-image">
+        🏫 <!-- Сюда можно вставить фото садика: <img src="sadik.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:20px;"> -->
+      </div>
+    </div>
+
+    <!-- Блок 2: Цифры и факты -->
+    <div class="stats">
+      <div class="stat-item">
+        <h4>8+</h4>
+        <p>Лет опыта</p>
+      </div>
+      <div class="stat-item">
+        <h4>12</h4>
+        <p>Опытных педагогов</p>
+      </div>
+      <div class="stat-item">
+        <h4>15</h4>
+        <p>Детей в группе (макс)</p>
+      </div>
+      <div class="stat-item">
+        <h4>5</h4>
+        <p>Раз питание в день</p>
+      </div>
+    </div>
+
+    <!-- Блок 3: Наши принципы -->
+    <h2 class="about-title" style="font-size: 28px; text-align: left; margin-bottom: 20px;">Наши принципы</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <h3>🛡️ Безопасность превыше всего</h3>
+        <p>Территория под круглосуточной охраной, повсюду установлены камеры видеонаблюдения. В саду работает медицинский работник.</p>
+      </div>
+      <div class="value-card">
+        <h3>🧠 Индивидуальный подход</h3>
+        <p>В наших группах максимум 15 человек. Это позволяет воспитателям найти подход к каждому ребенку и раскрыть его таланты.</p>
+      </div>
+      <div class="value-card">
+        <h3>🍎 Здоровое развитие</h3>
+        <p>Сбалансированное 5-разовое питание, регулярные прогулки на свежем воздухе, гимнастика и занятия в бассейне.</p>
+      </div>
+      <div class="value-card">
+        <h3>🌍 Всестороннее образование</h3>
+        <p>Английский и арабский языки, подготовка к школе, творческие мастерские и занятия с логопедом.</p>
+      </div>
     </div>
   </section>
 
