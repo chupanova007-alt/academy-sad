@@ -3,13 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Программы обучения - Садик "Академия"</title>
+  <title>Программы - Академия</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Стили для логотипа -->
+  <style>
+    .logo { display: flex; align-items: center; gap: 12px; font-size: 24px; font-weight: bold; color: #4a90e2; }
+    .logo img { height: 50px; width: auto; border-radius: 50%; }
+  </style>
 </head>
 <body>
-  <!-- Шапка сайта -->
   <header>
-    <div class="logo">☪️ Академия</div>
+    <!-- Блок с логотипом -->
+    <div class="logo">
+      <img src="logo.png" alt="Логотип Академия">
+      <span>Академия</span>
+    </div>
+    
     <nav>
       <a href="index.html">Главная</a>
       <a href="about.html">О нас</a>
@@ -19,107 +28,38 @@
     </nav>
   </header>
 
-  <!-- Основной контент -->
   <section class="features">
-    <h2>Наши программы и режим дня</h2>
-    
-    <div class="about-content">
-      <p style="font-size: 18px; max-width: 800px; margin: 0 auto 40px auto; text-align: center;">
-        Мы разработали сбалансированную программу, которая гармонично развивает интеллект, творческие способности и духовный мир ребенка. 
-      </p>
-
-      <!-- Блок с направлениями -->
-      <h3 style="text-align: center; margin-bottom: 30px; color: #4a90e2;">Направления развития</h3>
-      <div class="cards">
-        
-        <div class="card">
-          <h3>📖 Духовное воспитание</h3>
-          <p>Изучение основ Ислама, заучивание коротких сур, дуа на каждый день, изучение жизнеописания пророков (мир им) и норм адаба.</p>
-        </div>
-
-        <div class="card">
-          <h3>🔤 Арабский язык</h3>
-          <p>Изучение арабского алфавита, правильное произношение букв (махрадж), чтение слов и базовых предложений в игровой форме.</p>
-        </div>
-
-        <div class="card">
-          <h3>🎓 Подготовка к школе</h3>
-          <p>Обучение чтению, письму и математике. Развитие логики, памяти и внимания. Занятия с логопедом для чистой речи.</p>
-        </div>
-
-        <div class="card">
-          <h3>🎨 Творчество и спорт</h3>
-          <p>Рисование, лепка, аппликация. Подвижные игры, утренняя гимнастика и физическое развитие без музыки, в соответствии с нормами Ислама.</p>
-        </div>
-
+    <h2>Наши программы и занятия</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🧠 Подготовка к школе</h3>
+        <p>Обучение чтению, письму и счету в игровой форме.</p>
       </div>
-
-      <!-- Блок с режимом дня (Таблица) -->
-      <div style="margin-top: 60px;">
-        <h3 style="text-align: center; margin-bottom: 20px; color: #4a90e2;">Примерный распорядок дня</h3>
-        
-        <table style="width: 100%; max-width: 800px; margin: 0 auto; border-collapse: collapse; background: #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-radius: 10px; overflow: hidden;">
-          <tr style="background: #4a90e2; color: white;">
-            <th style="padding: 15px; text-align: left;">Время</th>
-            <th style="padding: 15px; text-align: left;">Занятие</th>
-          </tr>
-          <tr style="border-bottom: 1px solid #eee;">
-            <td style="padding: 15px; font-weight: bold; color: #333;">07:30 – 08:45</td>
-            <td style="padding: 15px;">Прием детей, утренний круг</td>
-          </tr>
-          <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
-            <td style="padding: 15px; font-weight: bold; color: #333;">09:00 </td>
-            <td style="padding: 15px;">Утренняя зарядка, подготовка к завтраку</td>
-          </tr>
-          <tr style="border-bottom: 1px solid #eee;">
-            <td style="padding: 15px; font-weight: bold; color: #333;">10:30</td>
-            <td style="padding: 15px;">Англиский/Арабский язык</td>
-          </tr>
-          <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
-            <td style="padding: 15px; font-weight: bold; color: #333;">10:50</td>
-            <td style="padding: 15px;">Прогулка/бассейн</td>
-          </tr>
-          <tr style="border-bottom: 1px solid #eee;">
-            <td style="padding: 15px; font-weight: bold; color: #333;">11:30</td>
-            <td style="padding: 15px;">Обед</td>
-          </tr>
-          <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
-            <td style="padding: 15px; font-weight: bold; color: #333;">12:00</td>
-            <td style="padding: 15px;">Тихий час</td>
-          </tr>
-          <tr style="border-bottom: 1px solid #eee;">
-            <td style="padding: 15px; font-weight: bold; color: #333;">15:00</td>
-            <td style="padding: 15px;">Подъем/полдник</td>
-          </tr>
-          <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
-            <td style="padding: 15px; font-weight: bold; color: #333;">15:40</td>
-            <td style="padding: 15px;">Игры</td>
-          </tr>
-          <tr style="border-bottom: 1px solid #eee;">
-            <td style="padding: 15px; font-weight: bold; color: #333;">16:00</td>
-            <td style="padding: 15px;">Творчество</td>
-          </tr>
-          <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
-            <td style="padding: 15px; font-weight: bold; color: #333;">16:30</td>
-            <td style="padding: 15px;">Ужин</td>
-          </tr>
-          <tr>
-            <td style="padding: 15px; font-weight: bold; color: #333;">17:00</td>
-            <td style="padding: 15px;">Прогулка, уход домой</td>
-          </tr>
-        </table>
+      <div class="card">
+        <h3>🗣️ Английский и арабский</h3>
+        <p>Изучение языков с опытными педагогами.</p>
       </div>
-
-      <!-- Кнопка -->
-      <div style="text-align: center; margin-top: 50px;">
-        <a href="contacts.html" class="btn">Записаться в группу</a>
+      <div class="card">
+        <h3>🏊 Бассейн</h3>
+        <p>Занятия с инструктором для укрепления здоровья и закаливания.</p>
+      </div>
+      <div class="card">
+        <h3>🎨 Рисование</h3>
+        <p>Развитие творческого мышления и мелкой моторики.</p>
+      </div>
+      <div class="card">
+        <h3>🤸 Гимнастика</h3>
+        <p>Физическое развитие, гибкость и координация движений.</p>
+      </div>
+      <div class="card">
+        <h3>👩‍⚕️ Логопед</h3>
+        <p>Индивидуальные занятия для правильной и чистой речи.</p>
       </div>
     </div>
   </section>
 
-  <!-- Подвал -->
   <footer>
-    <p>© 2025 Частный исламский садик "Академия". Все права защищены.</p>
+    <p>© 2025 Частный садик "Академия". Все права защищены.</p>
   </footer>
 </body>
 </html>
